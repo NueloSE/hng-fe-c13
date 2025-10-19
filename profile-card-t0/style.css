@@ -44,10 +44,24 @@ body {
 [data-testid="test-user-time"] {
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 1px;
-    font-size: .75rem;
+    font-size: .5rem;
     color: #d03e42;
     padding-top: 5px;
 
+}
+
+.time{
+    display: flex;
+    gap: 5px;
+    border: 1px solid;
+    border-radius: 2px;
+    padding-inline: 5px;
+    width: fit-content;
+}
+
+.time span{
+    font-size: .65rem;
+    margin-top: 3px;
 }
 
 [data-testid="test-user-bio"] {
