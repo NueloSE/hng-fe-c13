@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <script src="./script.js" defer></script>
+    <title>profile-card</title>
+  </head>
+  <body>
+    <article data-testid="test-profile-card">
+      <figure class="img-container">
+        <img
+          data-testid="test-user-avatar"
+          src="./images/me-cropped.jpg"
+          alt="nuelo headshot passport"
+        />
+      </figure>
+      <h2 data-testid="test-user-name">emmaNUEL akaLO</h2>
+      <p data-testid="test-user-time">lskglajsdflj</p>
+      <p data-testid="test-user-bio">
+        Full-stack developer and lifelong learner with a passion for building
+        accessible, user-centered digital experiences. When I'm not coding,
+        you'll find me on the play station gaming or reading.
+      </p>
+      
+
+      <ul data-testid="test-user-social-links">
+        <li>
+          <a
+            data-testid="test-user-social-github"
+            href="https://github.com/NueloSE"
+            target="_blank"
+            >
+            <img class="icons" src="./images/github.svg" alt="">
+            </a
+          >
+        </li>
+        <li>
+          <a
+            data-testid="test-user-social-linkedin"
+            href="https://www.linkedin.com/in/emmanuel-akalo/"
+            target="_blank"
+            ><img class="icons" src="./images/linkedin.svg" alt=""></a
+          >
+        </li>
+        <li>
+          <a
+            data-testid="test-user-social-twitter"
+            href="https://x.com/isNuelo"
+            target="_blank"
+            ><img class="icons" src="./images/x.png" alt=""></a
+          >
+        </li>
+      </ul>
+      <section data-testid="test-user-hobbies">
+        <p class="section-title">Hobbies & Interests</p>
+        <ul>
+            <li>Coding</li>
+            <li>Reading</li>
+            <li>Vibing good Music</li>
+            <li>Gaming</li>
+        </ul>
+      </section>
+      <section data-testid="test-user-dislikes">
+        <p class="section-title">Dislikes</p>
+        <ul>
+          <li>Spam emails</li>
+          <li>Noise</li>
+          <li>Outdoor activities</li>
+        </ul>
+      </section>
+    </article>
+  </body>
+</html>

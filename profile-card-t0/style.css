@@ -1,0 +1,117 @@
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+    background-color: #e1e1e1;
+   font-family: 'Inter', system-ui, sans-serif;
+}
+
+[data-testid="test-profile-card"] {
+    
+    max-width: 25rem;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: .5rem;
+    padding: 1.25rem;
+
+}
+
+.img-container {
+    width: fit-content;
+    margin: 0 auto;
+    border-right: 2px solid #e2e2e2;
+    border-top: 2px solid #e2e2e2;
+    border-radius: .25rem;
+    
+}
+[data-testid="test-user-avatar"]{
+    width: 8rem;
+    border-radius: .5rem;
+    border-bottom-left-radius: 0;
+    padding: 0.25rem 0.25rem 0 0;
+    
+}
+
+[data-testid="test-user-name"]{
+    font-size: 1rem;
+    margin-top: .75rem ;
+}
+
+[data-testid="test-user-time"] {
+    font-size: .75rem;
+    color: #d03e42;
+
+}
+
+[data-testid="test-user-bio"] {
+    font-size: .8rem;
+    text-align: justify;
+    line-height: 1.2rem;
+    padding: 1rem 0;
+}
+
+[data-testid="test-user-social-links"]{
+    display: flex;
+    gap: .5rem;
+    justify-content: start;
+    padding: .5rem 0;
+    
+}
+ li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    border: 1.5px solid #b6b5b5;
+    border-radius: 100%;
+    padding: .5rem .5rem .25rem .5rem;
+    
+}
+a:hover {
+    background-color: #b6b5b5;
+}
+
+.icons {
+    width: 1rem;
+    
+}
+
+.section-title {
+    font-size: .75rem;
+    color: #a8adb6;
+    margin-block: 1rem .4rem;
+}
+
+[data-testid="test-user-hobbies"] ul, [data-testid="test-user-dislikes"] ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, auto));
+    padding: 0;
+    gap: 1.2rem;
+    font-size: .75rem;
+}
+
+[data-testid="test-user-hobbies"] li, [data-testid="test-user-dislikes"] li {
+    
+    border-radius: 2rem;
+    padding: .2rem 0.9rem;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+[data-testid="test-user-hobbies"] li{
+    border: 1.5px solid #dbfbe6;
+    color: #239351;
+    background-color: #f0fdf4;
+}
+
+[data-testid="test-user-dislikes"] li{
+    border: 1.5px solid #fee9e9;
+    color: #d03e42;
+    background-color: #fef2f2;
+}
+
