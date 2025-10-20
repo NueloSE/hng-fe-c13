@@ -27,7 +27,7 @@ Each subdirectory represents a specific task or stage in the bootcamp:
 
 | Stage | Task                  | Description                                                            | Link                                 |
 | ----- | --------------------- | ---------------------------------------------------------------------- | ------------------------------------ |
-| 0     | `stage0-profile-card` | Build a testable profile card using semantic HTML, CSS, and vanilla JS | [View Folder](./stage0-profile-card) |
+| 0     | `stage0-profile-card` | Build a testable profile card using semantic HTML, CSS, and vanilla JS | [View Folder](./profile-card-t0) |
 | 1     | (upcoming)            | —                                                                      | —                                    |
 | 2     | (upcoming)            | —                                                                      | —                                    |
 
