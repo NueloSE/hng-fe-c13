@@ -1,45 +1,53 @@
-* {
+:root {
+    
+  --light-accent: #1864f3;  
+  --color-accent: #43639f;     
+  --color-bg: #f3f8ff;          
+  --color-text: #052862;        
+  --color-white: #FFFFFF;
+  --color-negative: #d03e42;
+}
+
+body {
   border: 0;
   margin: 0;
   box-sizing: border-box;
-}
-body {
-  background-color: #e1e1e1;
+  background-color: #f3f8ff;
   font-family: "Inter", system-ui, sans-serif;
 }
 
 @layer header {
-    nav{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 1.25rem;
-        width: 100%;
-        background-color: #ffffff;
-        position:fixed;
-        box-shadow: 0 5px 5px  rgba(0,0,0,0.3) ;
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.25rem;
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  }
+  .logo a {
+    color: var(--color-text)
+  }
+  .page-links {
+    display: flex;
+    gap: 2rem;
+  }
 
-    }
-    .logo a {
-        color: #0d47a1;
-        
-    }
-    .page-links {
-        display: flex;
-        gap: 2rem;
-        
-
-    }
-
-    .page-links a {
-        color: #0d47a1;
-        
-    }
+  .page-links a {
+    color: var(--color-text)
+  }
 }
 
 @layer main {
   .main {
     min-height: calc(100vh - 7vh);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text);
   }
 
   [data-testid="test-profile-card"] {
@@ -47,7 +55,8 @@ body {
     margin: 5rem auto;
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
+    background: #e4ebf5;
+background: linear-gradient(90deg, rgba(228, 235, 245, 1) 0%, rgba(212, 227, 255, 1) 50%, rgba(209, 215, 224, 1) 100%);
     border-radius: 0.5rem;
     padding: 1.25rem;
   }
@@ -55,8 +64,8 @@ body {
   .img-container {
     width: fit-content;
     margin: 0 auto;
-    border-right: 2px solid #e2e2e2;
-    border-top: 2px solid #e2e2e2;
+    border-right: 2px solid var(--color-accent);
+    border-top: 2px solid var(--color-accent);
     border-radius: 0.25rem;
   }
   [data-testid="test-user-avatar"] {
@@ -75,14 +84,15 @@ body {
     font-family: "Orbitron", sans-serif;
     letter-spacing: 1px;
     font-size: 0.5rem;
-    color: #d03e42;
+    color: var(--light-accent);
     padding-top: 5px;
   }
 
   .time {
     display: flex;
+    align-items: center;
     gap: 5px;
-    border: 1px solid;
+    border: 1.5px solid var(--color-accent);
     border-radius: 2px;
     padding-inline: 5px;
     width: fit-content;
@@ -90,14 +100,13 @@ body {
 
   .time span {
     font-size: 0.65rem;
-    margin-top: 3px;
+    margin-top: 4px;
   }
 
   [data-testid="test-user-bio"] {
     font-size: 0.8rem;
     text-align: justify;
     line-height: 1.2rem;
-    padding: 1rem 0;
   }
 
   [data-testid="test-user-social-links"] {
@@ -108,12 +117,13 @@ body {
   }
 
   .socials {
-    border: 1.5px solid #b6b5b5;
+    border: 1.5px solid var(--color-accent);
     border-radius: 100%;
     padding: 0.5rem 0.5rem 0.25rem 0.5rem;
   }
   .socials:hover {
-    background-color: #b6b5b5;
+    background-color: var(--color-accent);
+    fill: white;
   }
 
   .socials:focus {
@@ -123,13 +133,14 @@ body {
     background-color: #ebf8ff;
   }
 
-  .icons {
-    width: 1rem;
+  .icon:hover {
+    stroke: white;
   }
 
   .section-title {
     font-size: 0.75rem;
-    color: #a8adb6;
+    /* color: #a8adb6; */
+    font-weight: bolder;
     margin-block: 1rem 0.4rem;
   }
 
@@ -151,14 +162,14 @@ body {
   }
 
   [data-testid="test-user-hobbies"] li {
-    border: 1.5px solid #dbfbe6;
-    color: #239351;
-    background-color: #f0fdf4;
+    border: 1.5px solid var(--light-accent);
+    color: var(--light-accent);
+    background-color: var(--color-bg);
   }
 
   [data-testid="test-user-dislikes"] li {
-    border: 1.5px solid #fee9e9;
-    color: #d03e42;
+    border: 1.5px solid var(--color-negative);
+    color: var(--color-negative);
     background-color: #fef2f2;
   }
 }
