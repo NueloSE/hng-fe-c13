@@ -25,11 +25,11 @@ This repo showcases my progress through the **Frontend Track**, focused on:
 
 Each subdirectory represents a specific task or stage in the bootcamp:
 
-| Stage | Task                  | Description                                                            | Link                                 |
-| ----- | --------------------- | ---------------------------------------------------------------------- | ------------------------------------ |
-| 0     | `stage0-profile-card` | Build a testable profile card using semantic HTML, CSS, and vanilla JS | [View Folder](./profile-card-t0) |
-| 1     | (upcoming)            | —                                                                      | —                                    |
-| 2     | (upcoming)            | —                                                                      | —                                    |
+| Stage | Task                        | Description                                                            | Link                             |
+| ----- | --------------------------- | ---------------------------------------------------------------------- | -------------------------------- |
+| 0     | `stage0-profile-card`       | Build a testable profile card using semantic HTML, CSS, and vanilla JS | [View Folder](./profile-card-t0) |
+| 1     | `stage1-profile-card-contd` | improvement on the profile card to have multiple pages                 | [View Folder](./profile-card-t0) |
+| 2     | (upcoming)                  | —                                                                      | —                                |
 
 > Each task folder includes:
 >
