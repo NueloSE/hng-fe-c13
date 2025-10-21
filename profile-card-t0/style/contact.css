@@ -18,13 +18,15 @@
   border-radius: 50%;
 }
 
-.contact-form {
+#contact-form {
   border: #ffffff solid 1px;
   padding: 2rem;
   border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.8);
+
 }
 
-.contact-form div {
+#contact-form div {
   display: flex;
   flex-direction: column;
   max-width: 500px;
@@ -44,11 +46,29 @@ label span {
 }
 
 [data-testid="test-contact-submit"] {
-    width: 100%;
-    color: white;
-    
+  width: 100%;
+  color: white;
 }
 
+[data-testid="test-contact-success"] {
+  color: chartreuse;
+  border: 1px solid chartreuse;
+  width: fit-content;
+  margin: 4px auto;
+  padding: 2px 8px;
+  border-radius: 20px;
+  background-color: rgb(52, 56, 48);
+  display: none;
+}
+
+[data-testid="test-contact-error-name"],
+[data-testid="test-contact-error-email"],
+[data-testid="test-contact-error-subject"],
+[data-testid="test-contact-error-message"] {
+  color: var(--color-negative);
+  font-size: 12px;
+  margin-bottom: 1rem;
+}
 
 @media (min-width: 601px) {
   input {
