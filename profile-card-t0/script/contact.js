@@ -18,7 +18,9 @@ const messageError = document.querySelector(
 );
 
 const sendBtn = document.querySelector("[data-testid='test-contact-submit']");
-const successMessage = document.querySelector("[data-testid='test-contact-success']");
+const successMessage = document.querySelector(
+  "[data-testid='test-contact-success']"
+);
 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -47,28 +49,28 @@ function handleSubmit(e) {
   e.preventDefault();
   const validFormInput =
     validInput(fullName, 3, `Name must be atleast 3character`, fullNameError) &&
-    validInput(
-      message,
-      10,
-      `Message must be atleast 10 character`,
-      messageError
-    ) &&
+    validEmail(email) &&
     validInput(
       subject,
       10,
       `Subject must be atleast 5 character`,
       subjectError
     ) &&
-    validEmail(email);
+    validInput(
+      message,
+      10,
+      `Message must be atleast 10 character`,
+      messageError
+    );
 
   if (!validFormInput) {
     return;
   }
 
-  successMessage.style.display = "block"
+  successMessage.style.display = "block";
   setTimeout(() => {
-    successMessage.style.display = "none"
-  } ,2000)
+    successMessage.style.display = "none";
+  }, 2000);
   fullName.value = "";
   email.value = "";
   subject.value = "";
