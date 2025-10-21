@@ -1,0 +1,114 @@
+:root {
+  --light-accent: #1864f3;
+  --color-accent: #43639f;
+  --color-bg: #f3f8ff;
+  --color-text: #052862;
+  --color-white: #ffffff;
+  --color-negative: #d03e42;
+}
+
+[data-testid="test-about-page"] {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 8rem;
+  background-color: #000c58;
+  color: white;
+  z-index: -1;
+  display: flex;
+  gap: 2rem;
+}
+
+.hero {
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 0.1;
+  margin-bottom: 2rem;
+  
+}
+
+.hero p{
+    line-height: 1;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.img-box {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+  z-index: 1;
+}
+
+.user-icon {
+  background-color: var(--light-accent);
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  border-radius: 100%;
+  padding: 10px;
+}
+
+.profile-img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  border: 4px solid var(--light-accent);
+  padding: 4px;
+  background-color: white;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+.section-title span {
+  background-color: var(--light-accent);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+}
+.card {
+  text-align: justify;
+  line-height: 1.5;
+  border: 2px solid;
+  padding: 0 2rem;
+  border-radius: 1rem;
+  background-color: #052862;
+  box-shadow: 0 0  20px  rgba(255, 255, 255, 0.5);
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.goals li,
+.confidence li {
+  list-style: disc;
+}
+
+button {
+  /* background: #0d47a1; */
+  background: linear-gradient(
+    90deg,
+    rgba(13, 71, 161, 1) 0%,
+    rgba(59, 95, 148, 1) 50%,
+    rgba(87, 137, 212, 1) 100%
+  );
+  border: none;
+  font-weight: bolder;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button a {
+  color: white;
+}

@@ -1,0 +1,57 @@
+:root {
+  --light-accent: #1864f3;
+  --color-accent: #43639f;
+  --color-bg: #f3f8ff;
+  --color-text: #052862;
+  --color-white: #ffffff;
+  --color-negative: #d03e42;
+}
+
+[data-testid="test-contact-page"] {
+  color: var(--color-white);
+  padding-top: 5rem;
+}
+
+.email-icon {
+  background-color: var(--light-accent);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.contact-form {
+  border: #ffffff solid 1px;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.contact-form div {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+input {
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+textarea {
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+label span {
+  color: var(--color-negative);
+}
+
+[data-testid="test-contact-submit"] {
+    width: 100%;
+    color: white;
+    
+}
+
+
+@media (min-width: 601px) {
+  input {
+    width: 450px;
+  }
+}

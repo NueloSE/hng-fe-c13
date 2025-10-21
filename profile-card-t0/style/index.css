@@ -1,7 +1,7 @@
 :root {
     
   --light-accent: #1864f3;  
-  --color-accent: #43639f;     
+  --color-accent: #000c58;     
   --color-bg: #f3f8ff;          
   --color-text: #052862;        
   --color-white: #FFFFFF;
@@ -12,7 +12,7 @@ body {
   border: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: #f3f8ff;
+  background-color: #000c58;
   font-family: "Inter", system-ui, sans-serif;
 }
 
@@ -21,11 +21,11 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 1.25rem;
     width: 100%;
     background-color: #ffffff;
     position: fixed;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    z-index: 2;
   }
   .logo a {
     color: var(--color-text)
@@ -41,8 +41,8 @@ body {
 }
 
 @layer main {
-  .main {
-    min-height: calc(100vh - 7vh);
+  main {
+    min-height: calc(100vh);
     display: flex;
     flex-direction: column;
     align-items: center;

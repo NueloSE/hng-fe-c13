@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style/index.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Orbitron:wght@500&display=swap"
       rel="stylesheet"
     />
     <link
       rel="shortcut icon"
-      href="./images/me-cropped.jpg"
+      href="./images/me-cropped.png"
       type="image/x-icon"
     />
 
@@ -22,19 +22,19 @@
       <nav>
         <h1 class="logo"><a href="#">&lt;nuelo/&gt;</a></h1>
         <ul class="page-links">
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">About Me</a></li>
+          <li><a href="./about.html">About Me</a></li>
+          <li><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <div class="main">
+    <main>
       <article data-testid="test-profile-card">
         <picture class="img-container">
-          <source srcset="./images/me.jpg" media="(min-width:601px)" />
+          <source srcset="./images/me.png" media="(min-width:601px)" />
           <img
             data-testid="test-user-avatar"
-            src="./images/me-cropped.jpg"
+            src="./images/me-cropped.png"
             alt="nuelo headshot passport"
           />
         </picture>
@@ -106,12 +106,14 @@
                 data-testid="test-user-social-twitter"
                 href="https://x.com/isNuelo"
                 target="_blank"
-                ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                  <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="20px"
+                  height="20px">
                   <path
                     d="M453.2 112L523.8 112L369.6 288.2L551 528L409 528L297.7 382.6L170.5 528L99.8 528L264.7 339.5L90.8 112L236.4 112L336.9 244.9L453.2 112zM428.4 485.8L467.5 485.8L215.1 152L173.1 152L428.4 485.8z"
-                  /></svg
-              ></a>
+                  />
+                </svg>
+              </a>
             </li>
           </ul>
           <section data-testid="test-user-hobbies">
@@ -133,7 +135,7 @@
           </section>
         </div>
       </article>
-    </div>
+    </main>
 
     <footer>
       <small> &copy;2025 Built by &lt;nuelo/&gt; • HNG cohort13 </small>
