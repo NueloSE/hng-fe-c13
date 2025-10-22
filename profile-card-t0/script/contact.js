@@ -52,7 +52,7 @@ function handleSubmit(e) {
     validEmail(email) &&
     validInput(
       subject,
-      10,
+      5,
       `Subject must be atleast 5 character`,
       subjectError
     ) &&
